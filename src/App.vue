@@ -24,8 +24,12 @@ export default {
 </script>
 
 <style>
-div{
+/* div{
   border: blue solid 1px;
+} */
+body, html {
+  background-image: url("./assets/swirl_pattern.png");
+  background-repeat: repeat;
 }
 .container {
   width: 100vw;
