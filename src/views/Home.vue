@@ -1,9 +1,7 @@
 <template>
-  <div class="home-container">
-    <div class="home">
+  <div>
       <h1>News</h1>
       <grid-container :posts="posts"/>
-    </div>
   </div>
 </template>
 
@@ -28,22 +26,4 @@ export default {
 };
 </script>
 <style>
-.home-container {
-  position: absolute;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.39);
-  -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.39);
-  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.39);
-}
-.home {
-  width: 75vw;
-  height: auto;
-  padding:2em;
-  background-color: #F2F1E8;
-}
-h1 {
-  size: 200px;
-}
 </style>

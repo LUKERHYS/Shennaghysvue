@@ -12,8 +12,10 @@
           <img class="logo-image" src="./assets/head-logo.png" alt="">
         </div>
     </header>
-    <main>
-      <router-view/>
+    <main class="content-container">
+      <div class="content">
+        <router-view/>
+      </div>
     </main>
   </div>
 </template>
@@ -24,9 +26,9 @@ export default {
 </script>
 
 <style>
-/* div{
+div{
   border: blue solid 1px;
-} */
+}
 body, html {
   background-image: url("./assets/swirl_pattern.png");
   background-repeat: repeat;
@@ -78,9 +80,20 @@ body, html {
   max-height: 75%;
   padding: 1em;
 }
-main {
-  display:flex;
+.content-container {
   margin-top: 12%;
+  position: absolute;
+  width: 100%;
+  display: flex;
   justify-content: center;
+}
+.content {
+  width: 75vw;
+  height: auto;
+  padding:2em;
+  background-color: #F2F1E8;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.39);
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.39);
 }
 </style>
