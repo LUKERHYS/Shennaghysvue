@@ -1,6 +1,6 @@
 <template>
     <div class="grid-card">
-        <H1>{{this.post.title}}</H1>
+        <h2>{{this.post.title}}</h2>
         <p>{{this.post.content}}</p>
     </div>
 </template>
@@ -18,5 +18,10 @@ export default {
     width: 20%;
     height: 20%;
     margin: 2px;
+    text-align: left;
+    padding: 0 2%;
+}
+p {
+  font-family: Helvetica, Arial, sans-serif;
 }
 </style>
