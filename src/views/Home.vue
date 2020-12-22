@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="home-container">
     <div class="home">
       Home
     </div>
@@ -9,15 +9,23 @@
 <script>
 export default {
   name: 'Home',
+  // data: function() {
+  //   return {
+  //     postData: {
+  //       title: "This is a facebook post",
+  //       image: "./assets/swirl_pattern.png",
+  //       content: "This is the post info"
+  //     }
+  //   }
+  // },
   components: {
-
   },
 };
 </script>
 <style>
-.container {
+.home-container {
   position: absolute;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }

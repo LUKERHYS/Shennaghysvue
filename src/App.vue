@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <header>
         <div id="nav">
           <router-link to="/">Home</router-link>
@@ -10,11 +12,9 @@
           <img class="logo-image" src="./assets/head-logo.png" alt="">
         </div>
     </header>
-    <div class="content">
-      <main>
-        <router-view/>
-      </main>
-    </div>
+    <main>
+      <router-view/>
+    </main>
   </div>
 </template>
 
@@ -32,19 +32,12 @@ body, html {
   background-repeat: repeat;
 }
 .container {
-  width: 100vw;
-  display: block;
-  justify-content: space-between;
-  margin: 0;
-   font-family: Avenir, Helvetica, Arial, sans-serif;
+  height: 100vh;
+  font-family: 'Lobster', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 0;
-}
-header {
-  display: flexbox;
 }
 #nav {
   top: 0;
@@ -76,10 +69,18 @@ header {
   max-width: 12%;
   background-color: #F2F1E8;
   margin-left: 5%;
+  -webkit-box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.39);
+  box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.39);
 }
 .logo-image{
   max-width:75%;
   max-height: 75%;
   padding: 1em;
+}
+main {
+  display:flex;
+  margin-top: 12%;
+  justify-content: center;
 }
 </style>
